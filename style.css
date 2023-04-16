@@ -1,0 +1,98 @@
+ /* @import url('http:fonts.googleapis.com/css2?family=popping');  */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height: 100vh;
+    background: url('ocean.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+header{
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.Zomata{
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    user-select: none;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(225, 223, 219);
+    text-decoration:none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(211, 199, 199);
+    border-radius: 5px;
+    transform-origin:right;
+    transform: scaleX(0);
+    transition: transform .3s;
+
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btlogin-popup {
+    width: 140px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(184, 202, 202);
+    outline: none;
+    border-bottom: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgb(13, 13, 1);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btlogin-popup:hover {
+    background: rgb(205, 216, 216);
+    color: rgb(101, 85, 165);
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
